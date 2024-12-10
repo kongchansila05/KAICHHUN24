@@ -1,0 +1,5 @@
+aiogram==2.23.1
+pytelegrambotapi==4.22.1
+telegram==0.0.1
+flask
+Requests==2.32.3
