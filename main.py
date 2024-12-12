@@ -34,7 +34,7 @@ def send_welcome(message):
         "password": password,
         "domain": domain,
         "phone": '',
-        "currencyId": '3',
+        "currencyId": '5',
     }
 
     data_login = {
@@ -103,7 +103,7 @@ def send_register(message):
         "password": password,
         "domain": domain,
         "phone": '',
-        "currencyId": '3',
+        "currencyId": '5',
     }
 
     data_login = {
