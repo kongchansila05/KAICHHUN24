@@ -75,7 +75,7 @@ def send_welcome(message):
         if return_login.get('error') == "Invalid username or password!":
             bot.send_message(
                 chat_id,
-                f"ឈ្មោះរបស់អ្នកមានរួចហេីយសូមធ្វេីការដូរឈ្មោះតេឡេក្រាមលោកអ្នក")
+                f"บัญชีของคุณลูกค้าเคยสมัครแล้ว กรุณาเปลียนบัญชีใหม่ค่ะ")
             return
         else:
             if return_login.get('status') == 200:
@@ -144,7 +144,7 @@ def send_register(message):
         if return_login.get('error') == "Invalid username or password!":
             bot.send_message(
                 chat_id,
-                f"ឈ្មោះរបស់អ្នកមានរួចហេីយសូមធ្វេីការដូរឈ្មោះតេឡេក្រាមលោកអ្នក")
+                f"บัญชีของคุณลูกค้าเคยสมัครแล้ว กรุณาเปลียนบัญชีใหม่ค่ะ")
             return
         else:
             if return_login.get('status') == 200:
