@@ -5,12 +5,13 @@ from keep_alive import keep_alive
 keep_alive()
 API_KEY = os.getenv('API_KEY',
                     '7738820370:AAGH7alYqkMLpGaiCrSUjkH3Gq6kWzhBn_s')
-IMAGE_URL = "https://i.ibb.co/5sxj6wj/KC-2.jpg"
+IMAGE_URL = "https://i.ibb.co/CzY8pQJ/IMG-4645.jpg"
 bot = telebot.TeleBot(API_KEY)
 
 url_register = "https://api.kai24.live/api/cs_player/register"
 url_login = "https://api.kai24.live/api/cs_player/login_v2"
-caption = "សំរាប់ចម្ងល់ឬបញ្ហាផ្សេងៗ នឹង ដាក់/ដក ប្រាក់ ចុចទីនេះ 👉🏻  https://line.me/R/ti/p/@472ljodl  បញ្ជាក់៖ នេះជាម៉ាសុីនសម្រាប់តែបង្កើតអាខោន មិនចេះឆ្លើយតបទេ។ សូមអរគុណ!"
+caption = "สอบถามรายการอื่นๆ กับการ ฝาก ถอนเงิน
+👉🏻  https://line.me/R/ti/p/@472ljodl"
 domain = 'kai24.co'
 
 def get_ip():
@@ -57,7 +58,7 @@ def send_welcome(message):
         login = response_login_true.json()
         if login.get('status') == 200:
             token = login['data']['token']
-            bot.send_message(chat_id, f"អ្នកបង្កើត អាខោន ជោគជ័យ!")
+            bot.send_message(chat_id, f"สมัคร ยูสเซอร์ สำเร็จ")
             bot.send_message(
                 chat_id, f"Your account: `{full_name}`\n"
                 f"Your password: `{password}`\n",
@@ -79,7 +80,7 @@ def send_welcome(message):
             return
         else:
             if return_login.get('status') == 200:
-                bot.send_message(chat_id, f"អ្នកមាន អាខោន រួចហើយ!")
+                bot.send_message(chat_id, f"ลูกค้ามี ยูสเซอร์ แล้วค่ะ")
                 bot.send_message(
                     chat_id,
                     f"Your account: `{full_name}`\n"
@@ -126,7 +127,7 @@ def send_register(message):
         login = response_login_true.json()
         if login.get('status') == 200:
             token = login['data']['token']
-            bot.send_message(chat_id, f"អ្នកបង្កើត អាខោន ជោគជ័យ!")
+            bot.send_message(chat_id, f"สมัคร ยูสเซอร์ สำเร็จ")
             bot.send_message(
                 chat_id, f"Your account: `{full_name}`\n"
                 f"Your password: `{password}`\n",
@@ -148,7 +149,7 @@ def send_register(message):
             return
         else:
             if return_login.get('status') == 200:
-                bot.send_message(chat_id, f"អ្នកមាន អាខោន រួចហើយ!")
+                bot.send_message(chat_id, f"ลูกค้ามี ยูสเซอร์ แล้วค่ะ")
                 bot.send_message(
                     chat_id,
                     f"Your account: `{full_name}`\n"
