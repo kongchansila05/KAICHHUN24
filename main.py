@@ -10,8 +10,7 @@ bot = telebot.TeleBot(API_KEY)
 
 url_register = "https://api.kai24.live/api/cs_player/register"
 url_login = "https://api.kai24.live/api/cs_player/login_v2"
-caption = "สอบถามรายการอื่นๆ กับการ ฝาก ถอนเงิน"
-👉🏻  https://line.me/R/ti/p/@472ljodl"
+caption = "สอบถามรายการอื่นๆ กับการ ฝาก ถอนเงิน👉🏻 https://line.me/R/ti/p/@472ljodl"
 domain = 'kai24.co'
 
 def get_ip():
